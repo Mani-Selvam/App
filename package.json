@@ -3,9 +3,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "server": "cd server && nodemon server.js",
-        "client": "cd client && npm start"
+        "postinstall": "cd client && npm install && npm run build",
+        "start": "cd server && npm start"
     },
     "keywords": [],
     "author": "",
