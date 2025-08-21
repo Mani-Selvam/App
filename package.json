@@ -6,10 +6,10 @@
      "scripts": {
   "dev": "concurrently \"npm run server\" \"npm run client\"",
   "server": "cd server && node server.js",
+"install": "cd client && npm install",
   "client": "cd client && npm start",
   "build": "npm run build --prefix client",
   "start": "node server/server.js"
-
 
     },
     "keywords": [],
