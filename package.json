@@ -2,22 +2,16 @@
     "name": "my-app",
     "version": "1.0.0",
     "main": "index.js",
-    
-     "scripts": {
-  "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "server": "cd server && node server.js",
-"install": "cd client && npm install",
-  "client": "cd client && npm start",
-  "build": "npm run build --prefix client",
-  "start": "node server/server.js"
-
+    "scripts": {
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && nodemon server.js",
+        "client": "cd client && npm start"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "ajv": "^8.17.1",
-        "concurrently": "^9.2.0"
+        "ajv": "^8.17.1"
     }
 }
