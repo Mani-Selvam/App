@@ -2,9 +2,15 @@
     "name": "my-app",
     "version": "1.0.0",
     "main": "index.js",
-    "scripts": {
-        "postinstall": "cd client && npm install && npm run build",
-        "start": "cd server && npm start"
+    
+     "scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd server && node server.js",
+  "client": "cd client && npm start",
+  "build": "npm run build --prefix client",
+  "start": "node server/server.js"
+
+
     },
     "keywords": [],
     "author": "",
